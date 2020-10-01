@@ -6,4 +6,8 @@ Public class Temp {
     static void print(String text) {
         System.out.println(text);
     }
+
+    static void printHelloWorld() {
+        System.out.println("Hello World!");
+    }
 }
