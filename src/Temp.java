@@ -16,4 +16,10 @@ Public class Temp {
             printHelloWorld();
         }
     }
+
+    public static void printHello100() {
+        for(int i = 0; i < 100; i++) {
+            printHelloWorld();
+        }
+    }
 }
