@@ -22,4 +22,8 @@ Public class Temp {
             printHelloWorld();
         }
     }
+
+    public static void printDyslexicHello() {
+        print("Hlelo Wrlod!");
+    }
 }
