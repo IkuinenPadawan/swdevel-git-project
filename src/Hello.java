@@ -1,11 +1,11 @@
 Public class Hello {
-    
+
     public static void print(String text) {
         System.out.println(text);
     }
 
     public static void printHelloWorld() {
-        System.out.println("Hello World!");
+        print("Hello World!");
     }
 
     public static void printHelloWorld(int times) {
