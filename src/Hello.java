@@ -27,4 +27,8 @@ Public class Hello {
     public static void printHelloSpace() {
         print("Hello Space!");
     }
+
+    public static void statePurpose() {
+        print("Unknown");
+    }
 }
