@@ -6,4 +6,8 @@ class Util {
   public static int getInputInteger() {
     return Integer.parseInt(scanner.nextLine());
   }
+
+  public static String getInputString() {
+    return scanner.nextLine();
+  }
 }
