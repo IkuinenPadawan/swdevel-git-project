@@ -1,4 +1,4 @@
-Public class Temp {
+Public class Hello {
     public static void main(String [] args) {
 
     }
