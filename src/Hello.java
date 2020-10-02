@@ -26,4 +26,8 @@ Public class Hello {
     public static void printDyslexicHello() {
         print("Hlelo Wrlod!");
     }
+
+    public static void printHelloSpace() {
+        print("Hello Space!");
+    }
 }
