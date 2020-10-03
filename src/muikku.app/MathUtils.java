@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collections;
+
 class MathUtils {
   public static int random(int min, int max) {
     return min + (int)(Math.random() * ((max - min) + 1));
@@ -25,5 +28,10 @@ class MathUtils {
 
   public static int mul(int a, int b) {
     return a * b;
+  }
+
+  public static int min(Integer[] arr) {
+    int min = Collections.min(Arrays.asList(arr));
+    return min;
   }
 }
