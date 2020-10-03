@@ -30,6 +30,12 @@ class MathUtils {
     return a * b;
   }
 
+  public static double avg(int[] arr) {
+    int sum = sum(arr);
+    int amount = arr.length;
+    return (1.0 * sum) / amount;
+  }
+
   public static int min(int[] arr) {
     Integer[] tmp = intToIntegerArray(arr);
     int min = Collections.min(Arrays.asList(tmp));
