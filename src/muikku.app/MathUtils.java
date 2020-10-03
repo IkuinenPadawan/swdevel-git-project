@@ -34,4 +34,9 @@ class MathUtils {
     int min = Collections.min(Arrays.asList(arr));
     return min;
   }
+
+  public static int max(Integer[] arr) {
+    int max = Collections.max(Arrays.asList(arr));
+    return max;
+  }
 }
