@@ -30,13 +30,15 @@ class MathUtils {
     return a * b;
   }
 
-  public static int min(Integer[] arr) {
-    int min = Collections.min(Arrays.asList(arr));
+  public static int min(int[] arr) {
+    Integer[] tmp = intToIntegerArray(arr);
+    int min = Collections.min(Arrays.asList(tmp));
     return min;
   }
 
-  public static int max(Integer[] arr) {
-    int max = Collections.max(Arrays.asList(arr));
+  public static int max(int[] arr) {
+    Integer[] tmp = intToIntegerArray(arr);
+    int max = Collections.max(Arrays.asList(tmp));
     return max;
   }
 
