@@ -39,4 +39,22 @@ class MathUtils {
     int max = Collections.max(Arrays.asList(arr));
     return max;
   }
+
+  private static Integer[] intToIntegerArray(int[] arr) {
+    Integer[] integerArr = new Integer[arr.length];
+
+    for (int i = 0; i < arr.length; i++) {
+      integerArr[i] = Integer.valueOf(arr[i]);
+    }
+    return integerArr;
+  }
+
+  private static int[] IntegerToIntArray(Integer[] arr) {
+    int[] intArr = new int[arr.length];
+
+    for (int i = 0; i < arr.length; i++) {
+      intArr[i] = arr[i].intValue();
+    }
+    return intArr;
+  }
 }
