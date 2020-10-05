@@ -47,4 +47,10 @@ Public class Hello {
     public static int howManyHellosToGreetEveryone() {
         return 7;
     }
+    public static boolean areEveryoneGreeted(int helloAmount) {
+        if (helloAmount >= 7) {
+            return true;
+        }
+        return false;
+    }
 }
