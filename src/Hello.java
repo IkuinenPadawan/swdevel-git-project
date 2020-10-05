@@ -43,4 +43,8 @@ Public class Hello {
     public static int getHelloJelloPurpose() {
         return 42;
     }
+
+    public static int howManyHellosToGreetEveryone() {
+        return 7;
+    }
 }
