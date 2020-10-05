@@ -1,3 +1,9 @@
+/**
+ * A simple calculator app for simple calculations.
+ * 
+ * Asks user for input, and then performs that calculation. Prints result
+ * in console.
+ */
 class Calculator {
   public static void main (String[] args) {
     System.out.println("Welcome to Calculator! What would you like to calculate?");
