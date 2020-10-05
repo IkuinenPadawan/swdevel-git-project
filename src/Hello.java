@@ -48,7 +48,7 @@ Public class Hello {
         return 7;
     }
     public static boolean areEveryoneGreeted(int helloAmount) {
-        if (helloAmount >= 7) {
+        if (howManyHellosToGreetEveryone() >= 7) {
             return true;
         }
         return false;
