@@ -31,4 +31,8 @@ Public class Hello {
     public static void statePurpose() {
         print("Unknown");
     }
+
+    public static void jelloBeforeHello() {
+        print("Jello Hello");
+    }
 }
