@@ -18,4 +18,28 @@ class Calculator {
     }
     return arr;
   }
+
+  private static double handleInput(String[] parsedInput) {
+    int a = Integer.parseInt(parsedInput[0]);
+    int b = Integer.parseInt(parsedInput[2]);
+    char operator = parsedInput[1].charAt(0);
+    double result = 0.0;
+    switch (operator) {
+      case '+':
+        result = MathUtils.add(a, b);
+        break;
+      case '-':
+        result = MathUtils.sub(a, b);
+        break;
+      case '*':
+        result = MathUtils.mul(a, b);
+        break;
+      case '/':
+        result = MathUtils.div(a, b);
+        break;
+      default:
+        System.out.println("Something went wrong.");
+    }
+    return result;
+  }
 }
