@@ -39,4 +39,8 @@ Public class Hello {
     public static void helloBeforeJello() {
         print("Hello Jello");
     }
+
+    public static int getHelloJelloPurpose() {
+        return 42;
+    }
 }
