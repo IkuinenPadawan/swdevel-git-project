@@ -1,8 +1,9 @@
 class Calculator {
   public static void main (String[] args) {
     System.out.println("Welcome to Calculator! What would you like to calculate?");
-    String input = Util.getInputString();
-    System.out.println("result: " + input);
+    String[] input = parseInput(Util.getInputString());
+    double result = handleInput(input);
+    System.out.println("result: " + result);
   }
 
   private static String[] parseInput(String s) {
