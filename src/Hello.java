@@ -35,4 +35,8 @@ Public class Hello {
     public static void jelloBeforeHello() {
         print("Jello Hello");
     }
+
+    public static void helloBeforeJello() {
+        print("Hello Jello");
+    }
 }
