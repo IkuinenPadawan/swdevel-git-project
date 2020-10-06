@@ -6,7 +6,10 @@
  */
 class Calculator {
   public static void main (String[] args) {
-    System.out.println("Welcome to Calculator! What would you like to calculate?");
+    System.out.println("Welcome to Calculator! This is a simple calculator app.");
+    System.out.println("Supports input in this form: (num) (operator) (num)");
+    System.out.println("F. ex. '100 / 50' or '1 + 1'");
+    System.out.println("What would you like to calculate?");
     String[] input = splitInput(Util.getInputString());
     double result = handleInput(input);
     System.out.println("result: " + result);
