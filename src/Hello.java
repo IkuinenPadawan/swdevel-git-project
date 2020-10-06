@@ -41,4 +41,12 @@ Public class Hello {
         print("Hello Australia!");
         print("Hello Antarctica!");
     }
+
+    public static void greetOceans() {
+        print("Hello Arctic Ocean!");
+        print("Hello Southern Ocean!");
+        print("Hello Indian Ocean!");
+        print("Hello Atlantic Ocean!");
+        print("Hello Pacific Ocean!");
+    }
 }
