@@ -31,7 +31,29 @@ Public class Hello {
     public static void statePurpose() {
         print("Unknown");
     }
+  
+    public static void jelloBeforeHello() {
+        print("Jello Hello");
+    }
 
+    public static void helloBeforeJello() {
+        print("Hello Jello");
+    }
+
+    public static int getHelloJelloPurpose() {
+        return 42;
+    }
+
+    public static int howManyHellosToGreetEveryone() {
+        return 7;
+    }
+    public static boolean areEveryoneGreeted(int helloAmount) {
+        if (howManyHellosToGreetEveryone() >= 7) {
+            return true;
+        }
+        return false;
+    }
+  
     public static void greetContinents() {
         print("Hello Europe!");
         print("Hello North America!");
