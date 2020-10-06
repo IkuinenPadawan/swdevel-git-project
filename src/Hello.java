@@ -49,4 +49,9 @@ Public class Hello {
         print("Hello Atlantic Ocean!");
         print("Hello Pacific Ocean!");
     }
+
+    public static void greetAllMatter() {
+        greetContinents();
+        greetOceans();
+    }
 }
