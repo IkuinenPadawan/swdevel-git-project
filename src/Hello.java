@@ -31,4 +31,14 @@ Public class Hello {
     public static void statePurpose() {
         print("Unknown");
     }
+
+    public static void greetContinents() {
+        print("Hello Europe");
+        print("North America");
+        print("South America");
+        print("Africa");
+        print("Asia");
+        print("Australia");
+        print("Antarctica");
+    }
 }
