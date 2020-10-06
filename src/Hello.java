@@ -31,7 +31,7 @@ Public class Hello {
     public static void statePurpose() {
         print("Unknown");
     }
-
+  
     public static void jelloBeforeHello() {
         print("Jello Hello");
     }
@@ -52,5 +52,28 @@ Public class Hello {
             return true;
         }
         return false;
+    }
+  
+    public static void greetContinents() {
+        print("Hello Europe!");
+        print("Hello North America!");
+        print("Hello South America!");
+        print("Hello Africa!");
+        print("Hello Asia!");
+        print("Hello Australia!");
+        print("Hello Antarctica!");
+    }
+
+    public static void greetOceans() {
+        print("Hello Arctic Ocean!");
+        print("Hello Southern Ocean!");
+        print("Hello Indian Ocean!");
+        print("Hello Atlantic Ocean!");
+        print("Hello Pacific Ocean!");
+    }
+
+    public static void greetAllMatter() {
+        greetContinents();
+        greetOceans();
     }
 }
