@@ -33,12 +33,12 @@ Public class Hello {
     }
 
     public static void greetContinents() {
-        print("Hello Europe");
-        print("Hello North America");
-        print("Hello South America");
-        print("Hello Africa");
-        print("Hello Asia");
-        print("Hello Australia");
-        print("Hello Antarctica");
+        print("Hello Europe!");
+        print("Hello North America!");
+        print("Hello South America!");
+        print("Hello Africa!");
+        print("Hello Asia!");
+        print("Hello Australia!");
+        print("Hello Antarctica!");
     }
 }
