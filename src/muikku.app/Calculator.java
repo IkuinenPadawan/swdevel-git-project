@@ -33,6 +33,13 @@ class Calculator {
     return arr;
   }
 
+  /**
+   * Based on user input which has been taken through splitInput(), finds
+   * which method to call from MathUtils to perform the wanted calculation.
+   *
+   * @param parsedInput User input which has been split into an array
+   * @return result of the resulting calculation.
+   */
   private static double handleInput(String[] parsedInput) {
     int a = Integer.parseInt(parsedInput[0]);
     int b = Integer.parseInt(parsedInput[2]);
