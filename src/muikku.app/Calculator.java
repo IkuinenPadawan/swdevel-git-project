@@ -7,12 +7,19 @@
 class Calculator {
   public static void main (String[] args) {
     System.out.println("Welcome to Calculator! What would you like to calculate?");
-    String[] input = parseInput(Util.getInputString());
+    String[] input = splitInput(Util.getInputString());
     double result = handleInput(input);
     System.out.println("result: " + result);
   }
 
-  private static String[] parseInput(String s) {
+  /**
+   * Splits an input string into three pieces and returns them in an array.
+   * Input is assumed to be like this "(int) (operator) (int)" f. ex: "10 / 5"
+   *
+   * @param s the string to be split.
+   * @return array containing the split pieces.
+   */
+  private static String[] splitInput(String s) {
     String[] arr = {"", "", ""};
     int index = 0;
 
