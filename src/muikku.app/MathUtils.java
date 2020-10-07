@@ -1,7 +1,18 @@
 import java.util.Arrays;
 import java.util.Collections;
 
+/**
+ * Contains math related utility methods.
+ */
 class MathUtils {
+  
+  /**
+   * Method to get a random int between two ints.
+   * 
+   * @param min min, included
+   * @param max max, included
+   * @return random number between min and max, both included.
+   */
   public static int random(int min, int max) {
     return min + (int)(Math.random() * ((max - min) + 1));
   }
