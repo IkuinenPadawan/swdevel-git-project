@@ -70,8 +70,18 @@ Public class Hello {
         print("Hello Pacific Ocean!");
     }
 
+    public static void greetMolecules() {
+        print("Hello molecules!");
+    }
+
+    public static void greetAtoms() {
+        print("Hello atoms!");
+    }
+
     public static void greetAllMatter() {
         greetContinents();
         greetOceans();
+        greetMolecules();
+        greetAtoms();
     }
 }
