@@ -17,10 +17,24 @@ class MathUtils {
     return min + (int)(Math.random() * ((max - min) + 1));
   }
   
+  /**
+   * Method to add two ints together
+   * 
+   * @param a first int
+   * @param b second int
+   * @return a + b
+   */
   public static int add(int a, int  b) {
     return a + b;
   }
 
+  /**
+   * Method to substract two ints from one another
+   * 
+   * @param a first int
+   * @param b second int
+   * @return a - b
+   */
   public static int sub(int a, int b) {
     return a - b;
   }
