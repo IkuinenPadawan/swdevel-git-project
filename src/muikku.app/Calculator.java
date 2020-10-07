@@ -6,13 +6,19 @@
  */
 class Calculator {
   public static void main (String[] args) {
+    boolean keepRunning = true;
+    
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
     System.out.println("Supports input in this form: (num) (operator) (num)");
     System.out.println("F. ex. '100 / 50' or '1 + 1'");
-    System.out.println("What would you like to calculate?");
-    String[] input = splitInput(Util.getInputString());
-    double result = handleInput(input);
-    System.out.println("result: " + result);
+    System.out.println("Press ctrl + c to quit at any time.");
+    
+    while (keepRunning) {
+      System.out.println("What would you like to calculate?");
+      String[] input = splitInput(Util.getInputString());
+      double result = handleInput(input);
+      System.out.println("result: " + result);
+    }
   }
 
   /**
