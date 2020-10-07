@@ -73,11 +73,11 @@ Public class Hello {
     }
 
     public static void greetMolecules() {
-        print("Hello molecules!")
+        print("Hello molecules!");
     }
 
     public static void greetAtoms() {
-        print("Hello atoms!")
+        print("Hello atoms!");
     }
 
     public static void greetAllMatter() {
