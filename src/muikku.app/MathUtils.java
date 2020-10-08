@@ -53,6 +53,13 @@ class MathUtils {
     return sum;
   }
 
+  /**
+   * Method for division calculation
+   * 
+   * @param a first int
+   * @param b second int
+   * @return a / b, as a double to preserve decimals
+   */
   public static double div(int a, int b) {
     return (a * 1.0) / b;
   }
