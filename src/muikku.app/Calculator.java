@@ -9,7 +9,7 @@ class Calculator {
     boolean keepRunning = true;
     
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
-    System.out.println("Supports input in this form: (num) (operator) (num)");
+    System.out.println("Supports input in following form: (num) (operator) (num)");
     System.out.println("F. ex. '100 / 50' or '1 + 1'");
     System.out.println("Press ctrl + c to quit at any time.");
     
