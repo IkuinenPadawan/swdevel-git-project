@@ -92,4 +92,7 @@ Public class Hello {
     public static void greetGreeters() {
         print("Hello greeters!");
     }
+
+    public static void greetGreetersOfGreeters() {
+    }
 }
