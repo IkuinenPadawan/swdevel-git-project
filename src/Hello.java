@@ -88,4 +88,8 @@ Public class Hello {
     public static void isGreetingAllMatterRelevant() {
         print("Categorical no.");
     }
+
+    public static void greetGreeters() {
+        print("Hello greeters!");
+    }
 }
