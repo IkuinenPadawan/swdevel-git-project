@@ -87,12 +87,24 @@ class MathUtils {
     return (1.0 * sum) / amount;
   }
 
+  /**
+   * Method to get the smallest int in an int array
+   * 
+   * @param arr int array
+   * @return smallest number in an int array
+   */
   public static int min(int[] arr) {
     Integer[] tmp = intToIntegerArray(arr);
     int min = Collections.min(Arrays.asList(tmp));
     return min;
   }
 
+  /**
+   * Method to get biggest number in an int array
+   * 
+   * @param arr int array
+   * @return biggest number in an int array
+   */
   public static int max(int[] arr) {
     Integer[] tmp = intToIntegerArray(arr);
     int max = Collections.max(Arrays.asList(tmp));
