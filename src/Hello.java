@@ -96,4 +96,8 @@ Public class Hello {
     public static void greetGreetersOfGreeters() {
         print("Hello greeters of greeterers!");
     }
+
+    public static void emptyMethod() {
+        
+    }
 }
