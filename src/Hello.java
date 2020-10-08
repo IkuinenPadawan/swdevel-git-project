@@ -84,4 +84,8 @@ Public class Hello {
         greetMolecules();
         greetAtoms();
     }
+
+    public static void isGreetingAllMatterRelevant() {
+        print("Categorical no.");
+    }
 }
