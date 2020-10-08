@@ -64,6 +64,13 @@ class MathUtils {
     return (a * 1.0) / b;
   }
 
+  /**
+   * Method for multiplication calculation
+   * 
+   * @param a first int
+   * @param b second int
+   * @return a * b
+   */
   public static int mul(int a, int b) {
     return a * b;
   }
