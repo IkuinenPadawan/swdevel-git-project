@@ -75,6 +75,12 @@ class MathUtils {
     return a * b;
   }
 
+  /**
+   * Method to get an average of elements in an int array
+   * 
+   * @param arr array to find avg from
+   * @return average number from an array of ints
+   */
   public static double avg(int[] arr) {
     int sum = sum(arr);
     int amount = arr.length;
