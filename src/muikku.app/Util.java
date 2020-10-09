@@ -15,6 +15,11 @@ class Util {
     return Integer.parseInt(scanner.nextLine());
   }
 
+  /**
+   * Method to ask for user input in console
+   * 
+   * @return user input as a string
+   */
   public static String getInputString() {
     return scanner.nextLine();
   }
