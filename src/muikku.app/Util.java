@@ -6,6 +6,11 @@ import java.util.Scanner;
 class Util {
   static Scanner scanner = new Scanner(System.in);
 
+  /**
+   * Method to ask for user input in console
+   * 
+   * @return user input as an int
+   */
   public static int getInputInteger() {
     return Integer.parseInt(scanner.nextLine());
   }
