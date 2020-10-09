@@ -126,6 +126,12 @@ class MathUtils {
     return integerArr;
   }
 
+  /**
+   * Converts an Integer array to an int array
+   * 
+   * @param arr Ingeger array to be converted
+   * @return same array as an int array
+   */
   private static int[] IntegerToIntArray(Integer[] arr) {
     int[] intArr = new int[arr.length];
 
