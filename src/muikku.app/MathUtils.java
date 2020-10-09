@@ -111,6 +111,12 @@ class MathUtils {
     return max;
   }
 
+  /**
+   * Converts an int array into an Integer array
+   * 
+   * @param arr int array to be converted
+   * @return same array as an Integer array
+   */
   private static Integer[] intToIntegerArray(int[] arr) {
     Integer[] integerArr = new Integer[arr.length];
 
