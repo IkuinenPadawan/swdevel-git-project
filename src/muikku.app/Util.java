@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Class containing universally useful utility methods.
+ */
 class Util {
   static Scanner scanner = new Scanner(System.in);
 
