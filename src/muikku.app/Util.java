@@ -44,6 +44,13 @@ class Util {
     return tmp;
   }
 
+    /**
+   * Adds an element to an existing array of the same type.
+   * 
+   * @param arr existing array, can be empty
+   * @param d double to add to the array
+   * @return array with the new element added to the end
+   */
   public static int[] addIntToIntArray(int[] arr, int x) {
     int[] tmp = new int[arr.length + 1];
 
