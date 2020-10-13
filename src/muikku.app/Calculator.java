@@ -7,6 +7,7 @@
 class Calculator {
   public static void main (String[] args) {
     boolean keepRunning = true;
+    double[] results = new double[0];
     
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
     System.out.println("Supports input in following form: (num) (operator) (num)");
@@ -17,7 +18,12 @@ class Calculator {
       System.out.println("What would you like to calculate?");
       String[] input = splitInput(Util.getInputString());
       double result = handleInput(input);
+      results = Util.addDoubleToDoubleArray(results, result);
       System.out.println("result: " + result);
+      System.out.println("previous results: ");
+      for (int i = 0; i < results.length; i++) {
+        System.out.println(results[i]);
+      }
     }
   }
 
