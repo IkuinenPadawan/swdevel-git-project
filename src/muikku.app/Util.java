@@ -83,4 +83,17 @@ class Util {
     }
     return tmp;
   }
+
+  public static String[] addStringToStringArray(String[] arr, String s) {
+    String[] tmp = new String[arr.length + 1];
+
+    for (int i = 0; i < tmp.length; i++) {
+      if (i == tmp.length - 1) {
+        tmp[i] = s;
+      } else {
+        tmp[i] = arr[i];
+      }
+    }
+    return tmp;
+  }
 }
