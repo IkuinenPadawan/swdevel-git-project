@@ -64,6 +64,13 @@ class Util {
     return tmp;
   }
 
+  /**
+   * Adds an element to an existing array of the same type.
+   * 
+   * @param arr existing array, can be empty
+   * @param x float to add to the array
+   * @return array with the new element added to the end
+   */
   public static float[] addFloatToFloatArray(float[] arr, float x) {
     float[] tmp = new float[arr.length + 1];
 
