@@ -24,6 +24,9 @@ class Util {
     return scanner.nextLine();
   }
 
+  // TODO: Find a way to do all the below array adding methods with just one method instead.
+  // There's some disgusting code duplication going on
+
   /**
    * Adds an element to an existing array of the same type.
    * 
