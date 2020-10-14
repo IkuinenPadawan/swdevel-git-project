@@ -84,6 +84,13 @@ class Util {
     return tmp;
   }
 
+  /**
+   * Adds an element to an existing array of the same type.
+   * 
+   * @param arr existing array, can be empty
+   * @param s string to add to the array
+   * @return array with the new element added to the end
+   */
   public static String[] addStringToStringArray(String[] arr, String s) {
     String[] tmp = new String[arr.length + 1];
 
