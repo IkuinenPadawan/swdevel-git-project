@@ -23,7 +23,4 @@ class Util {
   public static String getInputString() {
     return scanner.nextLine();
   }
-
-  // TODO: Find a way to do all the below array adding methods with just one method instead.
-  // There's some disgusting code duplication going on
 }
