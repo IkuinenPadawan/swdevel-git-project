@@ -100,4 +100,8 @@ Public class Hello {
     public static void emptyMethod() {
         
     }
+
+    public static int getSeven() {
+        return 7;
+    }
 }
