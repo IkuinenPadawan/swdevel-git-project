@@ -19,7 +19,7 @@ class Calculator {
     while (keepRunning) {
       System.out.println("What would you like to calculate?");
       String[] input = splitInput(Util.getInputString());
-      double result = handleInput(input);
+      double result = handleCalculation(input);
       results.add(result);
       System.out.println("result: " + result);
       System.out.println("previous results: ");
@@ -55,7 +55,7 @@ class Calculator {
    * @param parsedInput User input which has been split into an array
    * @return result of the resulting calculation.
    */
-  private static double handleInput(String[] parsedInput) {
+  private static double handleCalculation(String[] parsedInput) {
     int a = Integer.parseInt(parsedInput[0]);
     int b = Integer.parseInt(parsedInput[2]);
     char operator = parsedInput[1].charAt(0);
