@@ -104,4 +104,8 @@ Public class Hello {
     public static int getSeven() {
         return 7;
     }
+
+    public static int getFive() {
+        return 5;
+    }
 }
