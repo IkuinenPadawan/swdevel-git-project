@@ -27,6 +27,11 @@ class Calculator {
     }
   }
 
+  //TODO: Implement commands "avg" "sum" and "exit" here
+  public static void handleInput() {
+    
+  }
+
   /**
    * Splits an input string into three pieces and returns them in an array.
    * Input is assumed to be like this "(int) (operator) (int)" f. ex: "10 / 5"
