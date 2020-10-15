@@ -116,4 +116,8 @@ Public class Hello {
     public static int getMillion() {
         return 1000000;
     }
+
+    public static int getTwo() {
+        return 2;
+    }
 }
