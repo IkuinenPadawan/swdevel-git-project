@@ -108,4 +108,8 @@ Public class Hello {
     public static int getFive() {
         return 5;
     }
+
+    public static int getOne() {
+        return 1;
+    }
 }
