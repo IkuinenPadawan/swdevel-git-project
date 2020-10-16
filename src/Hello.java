@@ -98,7 +98,7 @@ Public class Hello {
     }
 
     public static void emptyMethod() {
-        
+
     }
 
     public static int getSeven() {
@@ -119,5 +119,9 @@ Public class Hello {
 
     public static int getTwo() {
         return 2;
+    }
+
+    public static void uselessMethodOne() {
+        print("This is a useless method no 1");
     }
 }
