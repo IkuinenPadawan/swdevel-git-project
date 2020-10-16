@@ -84,4 +84,8 @@ Public class Hello {
         greetMolecules();
         greetAtoms();
     }
+
+    public static void uselessMethodOne() {
+        print("This is a useless method no 1");
+    }
 }
