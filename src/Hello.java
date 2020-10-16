@@ -88,4 +88,8 @@ Public class Hello {
     public static void uselessMethodOne() {
         print("This is a useless method no 1");
     }
+
+    public static void uselessMethodTwo() {
+        print("This is a useless method no 2");
+    }
 }
