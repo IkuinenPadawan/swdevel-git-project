@@ -45,8 +45,8 @@ class MathUtils {
    * @param arr array containing ints.
    * @return sum of all elements in an int array.
    */
-  public static int sum(double[] arr) {
-    int sum = 0;
+  public static double sum(double[] arr) {
+    double sum = 0;
     for (int i = 0; i < arr.length; i++) {
       sum += arr[i];
     }
@@ -82,7 +82,7 @@ class MathUtils {
    * @return average number from an array of ints
    */
   public static double avg(double[] arr) {
-    int sum = sum(arr);
+    double sum = sum(arr);
     int amount = arr.length;
     return (1.0 * sum) / amount;
   }
