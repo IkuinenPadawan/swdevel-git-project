@@ -40,10 +40,10 @@ class MathUtils {
   }
 
   /**
-   * Method to sum together all ints in an int[] array.
+   * Method to sum together all doubles in a double[] array.
    * 
-   * @param arr array containing ints.
-   * @return sum of all elements in an int array.
+   * @param arr array containing doubles.
+   * @return sum of all elements in a double array.
    */
   public static double sum(double[] arr) {
     double sum = 0;
@@ -76,7 +76,7 @@ class MathUtils {
   }
 
   /**
-   * Method to get an average of elements in an int array
+   * Method to get an average of elements in a double array
    * 
    * @param arr array to find avg from
    * @return average number from an array of ints
