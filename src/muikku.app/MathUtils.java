@@ -117,7 +117,7 @@ class MathUtils {
    * @param arr int array to be converted
    * @return same array as an Integer array
    */
-  private static Integer[] intToIntegerArray(int[] arr) {
+  public static Integer[] intToIntegerArray(int[] arr) {
     Integer[] integerArr = new Integer[arr.length];
 
     for (int i = 0; i < arr.length; i++) {
@@ -132,7 +132,7 @@ class MathUtils {
    * @param arr Ingeger array to be converted
    * @return same array as an int array
    */
-  private static int[] IntegerToIntArray(Integer[] arr) {
+  public static int[] IntegerToIntArray(Integer[] arr) {
     int[] intArr = new int[arr.length];
 
     for (int i = 0; i < arr.length; i++) {
