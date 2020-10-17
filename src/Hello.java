@@ -144,4 +144,8 @@ Public class Hello {
     public static void uselessMethodSix() {
         print("This is a useless method no 6");
     }
+
+    public static void uselessMethodSeven() {
+        print("This is a useless method no 7");
+    }
 }
