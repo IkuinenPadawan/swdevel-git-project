@@ -7,8 +7,12 @@ import java.util.ArrayList;
  * in console.
  */
 class Calculator {
+  final static String EXIT_MSG = "exiting";
+  final static String AVG_MSG = "Displaying avg of previous results: ";
+  final static String SUM_MSG = "Displaying sum of previous results: ";
+  static boolean keepRunning = true;
+
   public static void main (String[] args) {
-    boolean keepRunning = true;
     ArrayList<Double> results = new ArrayList<>();
     
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
@@ -28,8 +32,23 @@ class Calculator {
   }
 
   //TODO: Implement commands "avg" "sum" and "exit" here
-  public static void handleInput() {
-    
+  public static String handleInput(String input) {
+    String returnString = "";
+    switch (input) {
+      case "exit":
+        keepRunning = false;
+        returnString = EXIT_MSG;
+        break;
+      case "avg":
+        returnString = AVG_MSG;
+        break;
+      case "sum":
+        returnString = SUM_MSG;
+        break;
+      default:
+        returnString = input;
+    }
+    return returnString;
   }
 
   /**
