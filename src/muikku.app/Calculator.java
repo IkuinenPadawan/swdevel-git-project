@@ -14,6 +14,7 @@ class Calculator {
 
   public static void main (String[] args) {
     ArrayList<Double> results = new ArrayList<>();
+    double result = 0;
     
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
     System.out.println("Supports input in following form: (num) (operator) (num)");
@@ -22,12 +23,31 @@ class Calculator {
     
     while (keepRunning) {
       System.out.println("What would you like to calculate?");
-      String[] input = splitInput(Util.getInputString());
-      double result = handleCalculation(input);
-      results.add(result);
-      System.out.println("result: " + result);
-      System.out.println("previous results: ");
-      System.out.println(results);
+      String input = Util.getInputString();
+      String inputResult = handleInput(input);
+
+      // Convert ArrayList -> Double[] -> double[]
+      Double[] tmp = new Double[results.size()];
+      tmp = results.toArray(tmp);
+      double[] arr = MathUtils.nonPrimitiveDoubleToPrimitiveDoubleArray(tmp);
+
+      switch (inputResult) {
+        case EXIT_MSG:
+          System.out.println(inputResult);
+          break;
+        case AVG_MSG:
+          System.out.println(AVG_MSG + MathUtils.avg(arr));
+          break;
+        case SUM_MSG:
+          System.out.println(SUM_MSG + MathUtils.sum(arr));
+          break;
+        default:
+          result = handleCalculation(splitInput(inputResult));
+          results.add(result);
+          System.out.println("result: " + result);
+          System.out.println("previous results: ");
+          System.out.println(results);
+      }
     }
   }
 
