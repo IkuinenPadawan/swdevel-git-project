@@ -149,4 +149,13 @@ class MathUtils {
     }
     return doubleArr;
   }
+
+  public static Double[] primitiveDoubleToNonPrimitiveDoubleArray(double[] arr) {
+    Double[] doubleArr = new Double[arr.length];
+
+    for (int i = 0; i < arr.length; i++) {
+      doubleArr[i] = Double.valueOf(arr[i]);
+    }
+    return doubleArr;
+  }
 }
