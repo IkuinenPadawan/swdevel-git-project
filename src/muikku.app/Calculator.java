@@ -51,7 +51,6 @@ class Calculator {
     }
   }
 
-  //TODO: Implement commands "avg" "sum" and "exit" here
   public static String handleInput(String input) {
     String returnString = "";
     switch (input) {
