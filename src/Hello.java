@@ -90,7 +90,7 @@ Public class Hello {
     }
 
     public static void uselessMethodTwo() {
-        print("This is a useless method no 2");
+        print("This is a useless methogd no 2");
     }
 
     public static void uselessMethodThree() {
@@ -103,5 +103,9 @@ Public class Hello {
 
     public static void uselessMethodFive() {
         print("This is a useless method no 5");
+    }
+
+    public static void uselessMethodSix() {
+        print("This is a useless method no 6");
     }
 }
