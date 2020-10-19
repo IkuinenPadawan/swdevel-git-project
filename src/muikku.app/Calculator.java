@@ -25,7 +25,6 @@ class Calculator {
       System.out.println("What would you like to calculate?");
       String input = Util.getInputString();
       String inputResult = handleInput(input);
-
       // Convert ArrayList -> Double[] -> double[]
       Double[] tmp = new Double[results.size()];
       tmp = results.toArray(tmp);
@@ -33,6 +32,7 @@ class Calculator {
 
       switch (inputResult) {
         case EXIT_MSG:
+          keepRunning = false;
           System.out.println(inputResult);
           break;
         case AVG_MSG:
@@ -64,7 +64,6 @@ class Calculator {
     String returnString = "";
     switch (input) {
       case "exit":
-        keepRunning = false;
         returnString = EXIT_MSG;
         break;
       case "avg":
