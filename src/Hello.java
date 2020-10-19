@@ -132,4 +132,8 @@ Public class Hello {
     public static void uselessMethodTwelve() {
         print("This is a useless method no 12");
     }
+
+    public static void uselessMethodThirteen() {
+        print("This is a useless method no 13");
+    }
 }
