@@ -51,6 +51,15 @@ class Calculator {
     }
   }
 
+  /**
+   * Takes in a string input. Depending on the input returns a different string.
+   * This method is used to handle commands that the user can execute when
+   * running the app.
+   * 
+   * @param input String to handle.
+   * @return If input is a command, returns a string reflecting it, else returns itself.
+   * 
+   */
   public static String handleInput(String input) {
     String returnString = "";
     switch (input) {
@@ -105,7 +114,7 @@ class Calculator {
     double result = 0.0;
     switch (operator) {
       case '+':
-        result = MathUtils.add(a, b);
+        result = MathUtils.add(b, b);
         break;
       case '-':
         result = MathUtils.sub(a, b);
