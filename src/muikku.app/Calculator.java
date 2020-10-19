@@ -3,8 +3,9 @@ import java.util.ArrayList;
 /**
  * A simple calculator app for simple calculations.
  * 
- * Asks user for input, and then performs that calculation. Prints result
- * in console.
+ * Asks user for input, and then performs that calculation. Prints previous
+ * results in console. User can input additional commands, currently
+ * the following are implemented: 'avg', 'sum', 'exit'.
  */
 class Calculator {
   final static String EXIT_MSG = "exiting";
