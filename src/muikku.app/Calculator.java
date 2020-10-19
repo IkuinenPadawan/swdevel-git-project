@@ -20,12 +20,13 @@ class Calculator {
     System.out.println("Welcome to Calculator! This is a simple calculator app.");
     System.out.println("Supports input in following form: (num) (operator) (num)");
     System.out.println("F. ex. '100 / 50' or '1 + 1'");
-    System.out.println("Press ctrl + c to quit at any time.");
+    System.out.println("Type 'exit' to quit. Additional commands: 'avg', 'sum'");
     
     while (keepRunning) {
       System.out.println("What would you like to calculate?");
       String input = Util.getInputString();
       String inputResult = handleInput(input);
+      
       // Convert ArrayList -> Double[] -> double[]
       Double[] tmp = new Double[results.size()];
       tmp = results.toArray(tmp);
