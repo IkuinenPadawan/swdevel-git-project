@@ -84,4 +84,40 @@ Public class Hello {
         greetMolecules();
         greetAtoms();
     }
+
+    public static void isGreetingAllMatterRelevant() {
+        print("Categorical no.");
+    }
+
+    public static void greetGreeters() {
+        print("Hello greeters!");
+    }
+
+    public static void greetGreetersOfGreeters() {
+        print("Hello greeters of greeterers!");
+    }
+
+    public static void emptyMethod() {
+        
+    }
+
+    public static int getSeven() {
+        return 7;
+    }
+
+    public static int getFive() {
+        return 5;
+    }
+
+    public static int getOne() {
+        return 1;
+    }
+
+    public static int getMillion() {
+        return 1000000;
+    }
+
+    public static int getTwo() {
+        return 2;
+    }
 }
