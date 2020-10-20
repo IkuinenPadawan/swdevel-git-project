@@ -115,7 +115,7 @@ class Calculator {
     double result = 0.0;
     switch (operator) {
       case '+':
-        result = MathUtils.add(b, b);
+        result = MathUtils.add(a, b);
         break;
       case '-':
         result = MathUtils.sub(a, b);
