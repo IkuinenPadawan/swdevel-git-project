@@ -129,7 +129,7 @@ class MathUtils {
   /**
    * Converts an Integer array to an int array
    * 
-   * @param arr Ingeger array to be converted
+   * @param arr Integer array to be converted
    * @return same array as an int array
    */
   public static int[] integerToIntArray(Integer[] arr) {
