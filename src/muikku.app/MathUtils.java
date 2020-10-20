@@ -141,6 +141,12 @@ class MathUtils {
     return intArr;
   }
 
+  /**
+   * Converts a Double[] to a double[]
+   * 
+   * @param arr Double[] to be converted
+   * @return same array as double[]
+   */
   public static double[] nonPrimitiveDoubleToPrimitiveDoubleArray(Double[] arr) {
     double[] doubleArr = new double[arr.length];
 
