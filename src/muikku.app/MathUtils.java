@@ -129,7 +129,7 @@ class MathUtils {
   /**
    * Converts an Integer array to an int array
    * 
-   * @param arr Ingeger array to be converted
+   * @param arr Integer array to be converted
    * @return same array as an int array
    */
   public static int[] integerToIntArray(Integer[] arr) {
@@ -141,6 +141,12 @@ class MathUtils {
     return intArr;
   }
 
+  /**
+   * Converts a Double[] to a double[]
+   * 
+   * @param arr Double[] to be converted
+   * @return same array as double[]
+   */
   public static double[] nonPrimitiveDoubleToPrimitiveDoubleArray(Double[] arr) {
     double[] doubleArr = new double[arr.length];
 
@@ -150,6 +156,12 @@ class MathUtils {
     return doubleArr;
   }
 
+  /**
+   * Converts double[] to a Double[]
+   * 
+   * @param arr double[] to be converted
+   * @return same array as Double[].
+   */
   public static Double[] primitiveDoubleToNonPrimitiveDoubleArray(double[] arr) {
     Double[] doubleArr = new Double[arr.length];
 
