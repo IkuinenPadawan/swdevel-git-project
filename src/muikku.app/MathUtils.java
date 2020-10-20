@@ -40,13 +40,13 @@ class MathUtils {
   }
 
   /**
-   * Method to sum together all ints in an int[] array.
+   * Method to sum together all doubles in a double[] array.
    * 
-   * @param arr array containing ints.
-   * @return sum of all elements in an int array.
+   * @param arr array containing doubles.
+   * @return sum of all elements in a double array.
    */
-  public static int sum(int[] arr) {
-    int sum = 0;
+  public static double sum(double[] arr) {
+    double sum = 0;
     for (int i = 0; i < arr.length; i++) {
       sum += arr[i];
     }
@@ -76,13 +76,13 @@ class MathUtils {
   }
 
   /**
-   * Method to get an average of elements in an int array
+   * Method to get an average of elements in a double array
    * 
    * @param arr array to find avg from
    * @return average number from an array of ints
    */
-  public static double avg(int[] arr) {
-    int sum = sum(arr);
+  public static double avg(double[] arr) {
+    double sum = sum(arr);
     int amount = arr.length;
     return (1.0 * sum) / amount;
   }
@@ -117,7 +117,7 @@ class MathUtils {
    * @param arr int array to be converted
    * @return same array as an Integer array
    */
-  private static Integer[] intToIntegerArray(int[] arr) {
+  public static Integer[] intToIntegerArray(int[] arr) {
     Integer[] integerArr = new Integer[arr.length];
 
     for (int i = 0; i < arr.length; i++) {
@@ -129,15 +129,45 @@ class MathUtils {
   /**
    * Converts an Integer array to an int array
    * 
-   * @param arr Ingeger array to be converted
+   * @param arr Integer array to be converted
    * @return same array as an int array
    */
-  private static int[] IntegerToIntArray(Integer[] arr) {
+  public static int[] integerToIntArray(Integer[] arr) {
     int[] intArr = new int[arr.length];
 
     for (int i = 0; i < arr.length; i++) {
       intArr[i] = arr[i].intValue();
     }
     return intArr;
+  }
+
+  /**
+   * Converts a Double[] to a double[]
+   * 
+   * @param arr Double[] to be converted
+   * @return same array as double[]
+   */
+  public static double[] nonPrimitiveDoubleToPrimitiveDoubleArray(Double[] arr) {
+    double[] doubleArr = new double[arr.length];
+
+    for (int i = 0; i < arr.length; i++) {
+      doubleArr[i] = arr[i].doubleValue();
+    }
+    return doubleArr;
+  }
+
+  /**
+   * Converts double[] to a Double[]
+   * 
+   * @param arr double[] to be converted
+   * @return same array as Double[].
+   */
+  public static Double[] primitiveDoubleToNonPrimitiveDoubleArray(double[] arr) {
+    Double[] doubleArr = new Double[arr.length];
+
+    for (int i = 0; i < arr.length; i++) {
+      doubleArr[i] = Double.valueOf(arr[i]);
+    }
+    return doubleArr;
   }
 }
