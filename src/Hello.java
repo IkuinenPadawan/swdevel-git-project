@@ -180,4 +180,8 @@ Public class Hello {
     public static void uselessMethodFifteen() {
         print("This is a useless method no 15");
     }
+
+    public static void sayHelloFrench() {
+        print("Silmublee monde");
+    }
 }
