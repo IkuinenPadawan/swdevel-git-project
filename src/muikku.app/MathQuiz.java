@@ -1,8 +1,13 @@
 class MathQuiz {
   public static void main(String[] args) {
+    final String success = "You are absolutely correct! ";
+    final String failure = "You are very wrong! "; 
+
+    System.out.println("Welcome to MathQuiz! ");
     int answer = generateQuestion();
     int input = Util.getInputInteger();
-    System.out.println(answer == input);
+    String result = (input == answer) ? success : failure;
+    System.out.println(result);
   }
 
   private static int generateQuestion() {
