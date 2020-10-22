@@ -20,10 +20,10 @@ class MathQuiz {
         
         if (result.equals(success)) {
           streak++;
-        } else {
-          if (streak > longestStreak) {
+          if (streak > longestStreak || longestStreak == 0) {
             longestStreak = streak;
           }
+        } else {
           streak = 0;
         }
         System.out.println(result);
