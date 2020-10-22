@@ -98,7 +98,7 @@ Public class Hello {
     }
 
     public static void emptyMethod() {
-        
+
     }
 
     public static int getSeven() {
@@ -119,5 +119,65 @@ Public class Hello {
 
     public static int getTwo() {
         return 2;
+    }
+
+    public static void uselessMethodOne() {
+        print("This is a useless method no 1");
+    }
+
+    public static void uselessMethodTwo() {
+        print("This is a useless methogd no 2");
+    }
+
+    public static void uselessMethodThree() {
+        print("This is a useless method no 3");
+    }
+
+    public static void uselessMethodFour() {
+        print("This is a useless method no 4");
+    }
+
+    public static void uselessMethodFive() {
+        print("This is a useless method no 5");
+    }
+
+    public static void uselessMethodSix() {
+        print("This is a useless method no 6");
+    }
+
+    public static void uselessMethodSeven() {
+        print("This is a useless method no 7");
+    }
+
+    public static void uselessMethodEight() {
+        print("This is a useless method no 8");
+    }
+
+    public static void uselessMethodNine() {
+        print("This is a useless method no 9");
+    }
+
+    public static void uselessMethodTen() {
+        print("This is a useless method no 10");
+    }
+
+    public static void uselessMethodEleven() {
+        print("This is a useless method no 11");
+    }
+
+    public static void uselessMethodTwelve() {
+        print("This is a useless method no 12");
+    }
+
+    public static void uselessMethodThirteen() {
+        print("This is a useless method no 13");
+    }
+
+    public static void uselessMethodFourteen() {
+        print("This is a useless method no 14");
+    }
+
+    public static void uselessMethodFifteen() {
+        print("This is a useless method no 15");
     }
 }
