@@ -38,10 +38,25 @@ class MathQuiz {
     // display as calculation
     // calculate result
     // return result to compare against
-
+    char[] operators = {'+', '-', '*'};
+    char operator = operators[MathUtils.random(0, 2)];
     int a = MathUtils.random(1, 10);
     int b = MathUtils.random(1, 10);
-    System.out.println("What is the result of " + a + " + " + b + "?");
-    return a + b;
-  } 
+    System.out.println("What is the result of " + a + " " +  operator + " " + b + "?");
+    int result = 0;
+    switch (operator) {
+      case '+':
+        result = MathUtils.add(a, b);
+        break;
+      case '-':
+        result = MathUtils.sub(a, b);
+        break;
+      case '*':
+        result = MathUtils.mul(a, b);
+        break;
+      default:
+        System.out.println("Something went wrong with operator randomization. ");
+    }
+    return result;
+  }
 }
