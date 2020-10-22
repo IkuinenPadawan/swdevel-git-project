@@ -184,4 +184,8 @@ Public class Hello {
     public static void sayHelloFrench() {
         print("Silmublee monde");
     }
+
+    public static void sayHelloGerman() {
+        print("Achtung spitfeuer!");
+    }
 }
