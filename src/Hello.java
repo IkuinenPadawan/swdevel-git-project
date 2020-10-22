@@ -182,7 +182,7 @@ Public class Hello {
     }
 
     public static void sayHelloFrench() {
-        print("Silmublee monde");
+        print("Silmublee monde!");
     }
 
     public static void sayHelloGerman() {
