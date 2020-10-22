@@ -1,13 +1,18 @@
 class MathQuiz {
   public static void main(String[] args) {
     final String success = "You are absolutely correct! ";
-    final String failure = "You are very wrong! "; 
+    final String failure = "You are very wrong! ";
+    
+    boolean keepRunning = true;
 
     System.out.println("Welcome to MathQuiz! ");
-    int answer = generateQuestion();
-    int input = Util.getInputInteger();
-    String result = (input == answer) ? success : failure;
-    System.out.println(result);
+    System.out.println("Press ctrl + c to quit at any time. ");
+    while (keepRunning) {
+      int answer = generateQuestion();
+      int input = Util.getInputInteger();
+      String result = (input == answer) ? success : failure;
+      System.out.println(result);
+    }
   }
 
   private static int generateQuestion() {
