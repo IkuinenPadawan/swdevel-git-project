@@ -33,11 +33,6 @@ class MathQuiz {
   }
 
   private static int generateQuestion() {
-    // either no divisions or just round everything to int
-    // randomize operator & operands,
-    // display as calculation
-    // calculate result
-    // return result to compare against
     char[] operators = {'+', '-', '*'};
     char operator = operators[MathUtils.random(0, 2)];
     int a = MathUtils.random(1, 10);
