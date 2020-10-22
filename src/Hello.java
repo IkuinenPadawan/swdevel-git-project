@@ -188,4 +188,8 @@ Public class Hello {
     public static void sayHelloGerman() {
         print("Achtung spitfeuer!");
     }
+
+    public static void sayHelloArabic() {
+        print("Desert intensifies!");
+    }
 }
