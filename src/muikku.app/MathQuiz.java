@@ -4,15 +4,25 @@ class MathQuiz {
     final String failure = "You are very wrong! ";
     
     boolean keepRunning = true;
-
+    int longestStreak = 0;
+    int streak = 0;
     System.out.println("Welcome to MathQuiz! ");
     System.out.println("Press ctrl + c to quit at any time. ");
     while (keepRunning) {
       int answer = generateQuestion();
       int input = Util.getInputInteger();
       String result = (input == answer) ? success : failure;
+      if (result.equals(success)) {
+        streak++;
+      } else {
+        if (streak > longestStreak) {
+          longestStreak = streak;
+        }
+        streak = 0;
+      }
       System.out.println(result);
     }
+    System.out.println("Your longest streak of correct answers was: " + longestStreak);
   }
 
   private static int generateQuestion() {
