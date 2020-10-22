@@ -192,4 +192,8 @@ Public class Hello {
     public static void sayHelloArabic() {
         print("Desert intensifies!");
     }
+
+    public static void sayHelloJapanese() {
+        print("Totsugeki!");
+    }
 }
