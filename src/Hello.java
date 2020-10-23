@@ -208,4 +208,8 @@ Public class Hello {
     public static void sayHelloSpanish() {
         print("Uno cerveza!");
     }
+
+    public static void sayHelloSwedish() {
+        print("Tunnelbana korv!");
+    }
 }
