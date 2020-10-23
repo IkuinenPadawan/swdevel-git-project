@@ -200,4 +200,8 @@ Public class Hello {
     public static void sayHelloItalian() {
         print("Mamma mia!");
     }
+
+    public static void sayHelloChinese() {
+        print("Wongsu wushu!");
+    }
 }
