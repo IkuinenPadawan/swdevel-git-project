@@ -212,4 +212,8 @@ Public class Hello {
     public static void sayHelloSwedish() {
         print("Tunnelbana korv!");
     }
+
+    public static void sayHelloMordor() {
+        print("Ashnak gimbatur!");
+    }
 }
