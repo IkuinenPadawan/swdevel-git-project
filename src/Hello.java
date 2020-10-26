@@ -180,4 +180,40 @@ Public class Hello {
     public static void uselessMethodFifteen() {
         print("This is a useless method no 15");
     }
+
+    public static void sayHelloFrench() {
+        print("Silmublee monde!");
+    }
+
+    public static void sayHelloGerman() {
+        print("Achtung spitfeuer!");
+    }
+
+    public static void sayHelloArabic() {
+        print("Desert intensifies!");
+    }
+
+    public static void sayHelloJapanese() {
+        print("Totsugeki!");
+    }
+
+    public static void sayHelloItalian() {
+        print("Mamma mia!");
+    }
+
+    public static void sayHelloChinese() {
+        print("Wongsu wushu!");
+    }
+
+    public static void sayHelloSpanish() {
+        print("Uno cerveza!");
+    }
+
+    public static void sayHelloSwedish() {
+        print("Tunnelbana korv!");
+    }
+
+    public static void sayHelloMordor() {
+        print("Ashnak gimbatur!");
+    }
 }
