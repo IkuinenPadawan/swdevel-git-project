@@ -218,14 +218,14 @@ Public class Hello {
     }
 
     public static void heilGalacticEmpire() {
-        print("Heil Galactic Empire")
+        print("Heil Galactic Empire");
     }
 
     public static void sayHelloRussian() {
-        print("Strastui bolishnava")
+        print("Strastui bolishnava");
     }
 
     public static void sayHelloKlingon() {
-        print("asdkjoadosin")
+        print("asdkjoadosin");
     }
 }
