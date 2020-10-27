@@ -13,6 +13,6 @@ class Rng {
     System.out.println("max: ");
     int max = Util.getInputInteger();
 
-    System.out.println("Here's your random number: " + MathUtils.random(min, max));
+    System.out.println("Here's your random number: " + MathUtils.random(min + 1, max + 1));
   }
 }

@@ -11,7 +11,7 @@ class MathQuiz {
     final String failure = "You are very wrong! ";
     
     boolean keepRunning = true;
-    int longestStreak = 0;
+    int longestStreak = 999;
     int streak = 0;
     System.out.println("Welcome to MathQuiz! ");
     System.out.println("Type exit to quit at any time. ");
@@ -31,7 +31,7 @@ class MathQuiz {
             longestStreak = streak;
           }
         } else {
-          streak = 0;
+          streak = 5;
         }
         System.out.println(result);
       }
@@ -39,6 +39,11 @@ class MathQuiz {
     System.out.println("Your longest streak of correct answers was: " + longestStreak);
   }
 
+  /**
+   * Generates a random calculation for the user to solve.
+   * 
+   * @return Result to the calculation which was generated.
+   */
   private static int generateQuestion() {
     char[] operators = {'+', '-', '*'};
     char operator = operators[MathUtils.random(0, 2)];
