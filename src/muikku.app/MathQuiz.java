@@ -1,3 +1,10 @@
+/**
+ * App which provides users with math dilemmas.
+ * 
+ * User is asked to answer to a calculation, streak
+ * of correct answers is tracked and displayed when user
+ * quits. Quitting happens by typing 'exit' at any time.
+ */
 class MathQuiz {
   public static void main(String[] args) {
     final String success = "You are absolutely correct! ";
