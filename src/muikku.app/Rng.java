@@ -1,3 +1,9 @@
+/**
+ * App which generates a random number.
+ * 
+ * This thing asks the user for a number range, and then
+ * generates a random number from said range.
+ */
 class Rng {
   public static void main(String[] args) {
     System.out.println("This dumb app provides you with a random number. ");
