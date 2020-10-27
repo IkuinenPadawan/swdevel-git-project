@@ -220,4 +220,8 @@ Public class Hello {
     public static void heilGalacticEmpire() {
         print("Heil Galactic Empire")
     }
+
+    public static void sayHelloRussian() {
+        print("Strastui bolishnava")
+    }
 }
