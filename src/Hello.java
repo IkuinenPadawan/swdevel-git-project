@@ -224,4 +224,8 @@ Public class Hello {
     public static void sayHelloRussian() {
         print("Strastui bolishnava")
     }
+
+    public static void sayHelloKlingon() {
+        print("asdkjoadosin")
+    }
 }
