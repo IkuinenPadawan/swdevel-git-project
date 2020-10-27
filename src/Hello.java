@@ -216,4 +216,8 @@ Public class Hello {
     public static void sayHelloMordor() {
         print("Ashnak gimbatur!");
     }
+
+    public static void heilGalacticEmpire() {
+        print("Heil Galactic Empire")
+    }
 }
