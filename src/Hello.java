@@ -1,5 +1,7 @@
 Public class Hello {
 
+    // Some fix.
+
     public static void print(String text) {
         System.out.println(text);
     }
