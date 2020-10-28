@@ -31,7 +31,7 @@ class MathQuiz {
             longestStreak = streak;
           }
         } else {
-          streak = 5;
+          streak = 0;
         }
         System.out.println(result);
       }
