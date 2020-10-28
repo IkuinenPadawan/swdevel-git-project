@@ -11,7 +11,7 @@ class MathQuiz {
     final String failure = "You are very wrong! ";
     
     boolean keepRunning = true;
-    int longestStreak = 999;
+    int longestStreak = 0;
     int streak = 0;
     System.out.println("Welcome to MathQuiz! ");
     System.out.println("Type exit to quit at any time. ");
