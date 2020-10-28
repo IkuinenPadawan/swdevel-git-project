@@ -216,4 +216,16 @@ Public class Hello {
     public static void sayHelloMordor() {
         print("Ashnak gimbatur!");
     }
+
+    public static void heilGalacticEmpire() {
+        print("Heil Galactic Empire");
+    }
+
+    public static void sayHelloRussian() {
+        print("Strastui bolishnava");
+    }
+
+    public static void sayHelloKlingon() {
+        print("asdkjoadosin");
+    }
 }
