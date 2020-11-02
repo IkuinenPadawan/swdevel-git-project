@@ -11,14 +11,14 @@ public class Game {
       startingRoom();
     }
 
-    public void introduction() {
+    private void introduction() {
       System.out.println("Welcome to " + gameName + "!");
       System.out.println("What would you like to be called?: ");
       playerName = Utils.getRawInput();
       System.out.println("Have fun " + playerName + "!");
     }
 
-    public void startingRoom() {
+    private void startingRoom() {
         System.out.println("You wake up in a dark room feeling groggy. What do you do?");
         System.out.println("  1. Carefully feel yourself around the room to get clues of where you are.");
         System.out.println("  2. Open your eyes");
