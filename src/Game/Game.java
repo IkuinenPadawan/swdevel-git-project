@@ -18,7 +18,16 @@ public class Game {
         System.out.println("  1. Carefully feel yourself around the room to get clues of where you are.");
         System.out.println("  2. Open your eyes");
 
-        String action = scanner.nextLine();
+        int action = Integer.parseInt(scanner.nextLine());
+
+        switch(action) {
+          case 1:
+            break;
+
+          case 2:
+            break
+        }
+
     }
 
 }
