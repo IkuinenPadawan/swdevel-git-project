@@ -1,11 +1,21 @@
 public class Game {
-      
+    private final String gameName = "SomeCleverGameName";
+    private String playerName;
+    
     public Game() {
 
     }
 
     public void start() {
-        startingRoom();
+      introduction();  
+      startingRoom();
+    }
+
+    public void introduction() {
+      System.out.println("Welcome to " + gameName + "!");
+      System.out.println("What would you like to be called?: ");
+      playerName = Utils.getRawInput();
+      System.out.println("Have fun " + playerName + "!");
     }
 
     public void startingRoom() {
