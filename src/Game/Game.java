@@ -1,7 +1,12 @@
+  
+import java.util.Scanner;
+
 public class Game {
+
+    protected Scanner scanner
       
     public Game() {
-    
+      this.scanner = new Scanner(System.in);
     }
 
     public void start() {
