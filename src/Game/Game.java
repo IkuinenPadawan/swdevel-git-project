@@ -14,7 +14,11 @@ public class Game {
     }
 
     public void startingRoom() {
-        System.out.println("You are in a dark room.")
+        System.out.println("You wake up in a dark room feeling groggy. What do you do?");
+        System.out.println("  1. Carefully feel yourself around the room to get clues of where you are.");
+        System.out.println("  2. Open your eyes");
+
+        String action = scanner.nextLine();
     }
 
 }
