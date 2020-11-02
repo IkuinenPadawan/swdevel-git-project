@@ -1,12 +1,7 @@
-  
-import java.util.Scanner;
-
 public class Game {
-
-    protected Scanner scanner;
       
     public Game() {
-      this.scanner = new Scanner(System.in);
+
     }
 
     public void start() {
@@ -18,7 +13,7 @@ public class Game {
         System.out.println("  1. Carefully feel yourself around the room to get clues of where you are.");
         System.out.println("  2. Open your eyes");
 
-        int action = Integer.parseInt(scanner.nextLine());
+        int action = Integer.parseInt(Utils.getRawInput());
 
         switch(action) {
           case 1:
