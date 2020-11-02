@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Game {
 
-    protected Scanner scanner
+    protected Scanner scanner;
       
     public Game() {
       this.scanner = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Game {
             break;
 
           case 2:
-            break
+            break;
         }
 
     }
