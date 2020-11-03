@@ -16,9 +16,12 @@ public class Game {
       System.out.println("What would you like to be called?: ");
       playerName = Utils.getRawInput();
       System.out.println("What kind of name is that? Well, anyway, have fun " + playerName + "!" + "\n\n\n\n");
+      wait(1000);
       System.out.println("Now, sleep tight. *BONK*");
+      wait(1000);
       System.out.println("Life doesn't even have a chance to flash before your eyes,"
                           + " as you instantly fall unconscious.");
+      wait(2000);
     }
 
     private void startingRoom() {
@@ -52,6 +55,14 @@ public class Game {
     private void roomOne(int caseNo) {
       if (caseNo == 1) {
         System.out.println("You move through the opening and go forward hugging the cold wall. You seem to have entered in some kind of a corridor.")
+      }
+    }
+    
+    private void wait(int milliseconds) {
+      try {
+        Thread.sleep(milliseconds);
+      } catch (Exception e) {
+        //TODO: handle exception
       }
     }
 
