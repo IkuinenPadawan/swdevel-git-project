@@ -76,7 +76,11 @@ public class Game {
 
     private String askPlayerName() {
       String input = Utils.getRawInput();
-      return input;
+      if(input.equals("random")) {
+        return randomizeName();
+      } else {
+        return input;
+      }
     }
 
 }
