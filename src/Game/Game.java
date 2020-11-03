@@ -14,7 +14,7 @@ public class Game {
     private void introduction() {
       System.out.println("Welcome to " + gameName + "!");
       System.out.println("What would you like to be called?: ");
-      playerName = Utils.getRawInput();
+      playerName = askPlayerName();
       System.out.println("What kind of name is that? Well, anyway, have fun " + playerName + "!" + "\n\n\n\n");
       wait(1000);
       System.out.println("Now, sleep tight. *BONK*");
@@ -72,6 +72,11 @@ public class Game {
       String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe"};
       int random = (int) (Math.random() * names.length);
       return names[random];
+    }
+
+    private String askPlayerName() {
+      String input = Utils.getRawInput();
+      return input;
     }
 
 }
