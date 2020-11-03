@@ -31,6 +31,9 @@ public class Game {
               System.out.println("  1. Move through the opening.");
               System.out.println("  2. Open your eyes");
               int action = Integer.parseInt(Utils.getRawInput());
+              if (action == 1) {
+                nextRoom();
+              }
             break;
 
           case 2:
