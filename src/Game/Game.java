@@ -66,4 +66,12 @@ public class Game {
       }
     }
 
+    // To be used somewhere
+    // Could be moved to another class
+    private String randomizeName() {
+      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe"};
+      int random = (int) (Math.random() * names.length);
+      return names[random];
+    }
+
 }
