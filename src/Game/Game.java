@@ -15,7 +15,7 @@ public class Game {
       System.out.println("Welcome to " + gameName + "!");
       System.out.println("What would you like to be called?: ");
       playerName = Utils.getRawInput();
-      System.out.println("Have fun " + playerName + "!");
+      System.out.println("Have fun " + playerName + "!" + "\n\n\n\n");
     }
 
     private void startingRoom() {
