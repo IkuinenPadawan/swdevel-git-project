@@ -16,6 +16,9 @@ public class Game {
       System.out.println("What would you like to be called?: ");
       playerName = Utils.getRawInput();
       System.out.println("What kind of name is that? Well, anyway, have fun " + playerName + "!" + "\n\n\n\n");
+      System.out.println("Now, sleep tight. *BONK*");
+      System.out.println("Life doesn't even have a chance to flash before your eyes,"
+                          + " as you instantly fall unconscious.");
     }
 
     private void startingRoom() {
