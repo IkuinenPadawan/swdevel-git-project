@@ -54,7 +54,7 @@ public class Game {
 
     private void roomOne(int caseNo) {
       if (caseNo == 1) {
-        System.out.println("You move through the opening and go forward hugging the cold wall. You seem to have entered in some kind of a corridor.")
+        System.out.println("You move through the opening and go forward hugging the cold wall. You seem to have entered in some kind of a corridor.");
       }
     }
     
