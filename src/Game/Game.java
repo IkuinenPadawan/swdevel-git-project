@@ -32,7 +32,7 @@ public class Game {
               System.out.println("  2. Open your eyes");
               int action = Integer.parseInt(Utils.getRawInput());
               if (action == 1) {
-                roomOne();
+                roomOne(1);
               }
             break;
 
@@ -46,8 +46,10 @@ public class Game {
 
     }
 
-    private void roomOne() {
-      
+    private void roomOne(int caseNo) {
+      if (caseNo == 1) {
+        System.out.println("You move through the opening and go forward hugging the cold wall. You seem to have entered in some kind of a corridor.")
+      }
     }
 
 }
