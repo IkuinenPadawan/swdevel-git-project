@@ -88,7 +88,6 @@ public class Game {
                             + " entered in some kind of a corridor.");
       }
     }
-
     private void wait(int milliseconds) {
       try {
         Thread.sleep(milliseconds);
