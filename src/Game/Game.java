@@ -113,7 +113,7 @@ public class Game {
     private void roomTwo(String state) {
 
     }
-    
+
     private void wait(int milliseconds) {
       try {
         Thread.sleep(milliseconds);
@@ -137,6 +137,9 @@ public class Game {
       } else {
         return input;
       }
+
+    private int randomDamage() {
+      return (int) (Math.random() * 100) + 1;
     }
 
 }
