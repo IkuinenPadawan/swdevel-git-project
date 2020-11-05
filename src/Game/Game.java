@@ -62,7 +62,7 @@ public class Game {
               System.out.println("  2. Crawl forward in search of a light switch");
               int action = Integer.parseInt(Utils.getRawInput());
               if (action == 1) {
-
+                  roomOneContinued("urea");
               } else if (action == 2) {
                   System.out.println("You cannot find a light switch. The burning sensation in your eyes doesn't seem to get better.");
                   System.out.println("  1. You say out loud: 'Hello, is there anybody out there?'");
@@ -73,7 +73,7 @@ public class Game {
                       System.out.println("You almost soil yourself as the voice booms from the corner somewhere. What the hell is this you wonder. You are glad that you didn't pee on your eyes.");
                       roomOneContinued();
                   } else if (action == 2) {
-                      System.out.println("You try to position yourself ideally to get the urea to hit your eyes. You finally realize that you are dehydrated and can't do it. You must find water first.");
+                      roomOneContinued("urea");
                   }
               }
             break;
