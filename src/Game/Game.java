@@ -82,10 +82,15 @@ public class Game {
     }
 
     private void roomOne(int caseNo) {
-      if (caseNo == 1) {
-        System.out.println("You move through the opening and go forward"
-                            + " hugging the cold wall. You seem to have"
-                            + " entered in some kind of a corridor.");
+      switch (caseNo) {
+         case 1: 
+            System.out.println("You move through the opening and go forward" 
+                            + "hugging the cold wall. You seem to have" 
+                            + "entered some kind of a corridor." 
+                            + "Finally you stumble upon stairs."
+                            + "You wonder if you could ascend the stairs" 
+                            + "rapidly even if you can't see anything.");
+        break;
       }
     }
     private void wait(int milliseconds) {
