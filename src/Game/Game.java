@@ -78,18 +78,28 @@ public class Game {
               action = Integer.parseInt(Utils.getRawInput());
             break;
         }
-
-    }
+      }
 
     private void roomOne(int caseNo) {
       switch (caseNo) {
          case 1: 
-            System.out.println("You move through the opening and go forward" 
-                            + "hugging the cold wall. You seem to have" 
-                            + "entered some kind of a corridor." 
-                            + "Finally you stumble upon stairs."
-                            + "You wonder if you could ascend the stairs" 
-                            + "rapidly even if you can't see anything.");
+             System.out.println("You move through the opening and go forward" 
+                                + "hugging the cold wall. You seem to have" 
+                                + "entered some kind of a corridor."
+                                + "Finally you stumble upon stairs."
+                                + "You wonder if you could ascend the stairs"
+                                + "rapidly even if you can't see anything.");
+             System.out.println("  1. Run up the stairs.");
+             System.out.println("  2. You might trip while running so ascend the stairs slowly and carefully.");
+             System.out.println("  3. Go back to the room where you woke up to see if there is something useful.");
+             int action = Integer.parseInt(Utils.getRawInput());
+             if (action == 1) {
+                  roomTwo('run');
+             } else if (action == 2) {
+                  roomTwo('walk');     
+             } else if (action == 3) {
+                  startingRoom(true);
+             }
         break;
       }
     }
