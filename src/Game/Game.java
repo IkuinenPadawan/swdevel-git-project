@@ -80,6 +80,10 @@ public class Game {
         }
       }
 
+    private void roomOneContinued(String state) {
+      
+    }
+
     private void roomOne(int caseNo) {
       switch (caseNo) {
          case 1: 
