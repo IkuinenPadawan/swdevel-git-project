@@ -81,7 +81,7 @@ public class Game {
       }
 
     private void roomOneContinued(String state) {
-      
+
     }
 
     private void roomOne(int caseNo) {
@@ -109,6 +109,11 @@ public class Game {
              
       }
     }
+
+    private void roomTwo(String state) {
+
+    }
+    
     private void wait(int milliseconds) {
       try {
         Thread.sleep(milliseconds);
