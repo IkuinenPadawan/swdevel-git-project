@@ -23,7 +23,7 @@ public class Game {
       wait(1000);
       System.out.println("Life doesn't even have a chance to flash before your"
                          +  " eyes, as you instantly fall unconscious.");               
-      wait(2000);
+      wait(5000);
     }
     // Handling long strings in java is a bitch
     private void startingRoom() {
