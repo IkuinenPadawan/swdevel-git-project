@@ -99,9 +99,9 @@ public class Game {
              System.out.println("  3. Go back to the room where you woke up to see if there is something useful.");
              int action = Integer.parseInt(Utils.getRawInput());
              if (action == 1) {
-                  roomTwo('run');
+                  roomTwo("run");
              } else if (action == 2) {
-                  roomTwo('walk');     
+                  roomTwo("walk");     
              } else if (action == 3) {
                   startingRoom(true);
              }
