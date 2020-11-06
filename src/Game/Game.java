@@ -1,7 +1,8 @@
 public class Game {
     private final String gameName = "SomeCleverGameName";
     private String playerName;
-    
+    private String nemesisName = randomizeName();
+
     public Game() {
 
     }
