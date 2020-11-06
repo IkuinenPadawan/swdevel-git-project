@@ -54,41 +54,66 @@ public class Game {
               action = Integer.parseInt(Utils.getRawInput());
               if (action == 1) {
                 roomOne(1);
+                break;
+              }
+          case 2:
+              System.out.println("Brightest lights you have ever seen sear through your retina. You close your eyes immediately in utter pain while falling to your knees. Hard stone floor almost shatters your knees and you cry out in mindnumbing pain. Pain induced tears start to form up in your eyes, increasing the burning feeling. The pain is almost intolerable.");
+              System.out.println("  1. You remember that pee helps to reduce burning pain. Contort yourself to a position where you can pee in your eyes.");
+              System.out.println("  2. Crawl forward in search of a light switch");
+              int action = Integer.parseInt(Utils.getRawInput());
+              if (action == 1) {
+                  roomOneContinued("urea");
+              } else if (action == 2) {
+                  System.out.println("You cannot find a light switch. The burning sensation in your eyes doesn't seem to get better.");
+                  System.out.println("  1. You say out loud: 'Hello, is there anybody out there?'");
+                  System.out.println("  2. You decide after all to pee on your eyes.");
+                  int action = Integer.parseInt(Utils.getRawInput());
+                  if (action == 1) {
+                      System.out.println("'Yes how can I help you?'\n\n ");
+                      System.out.println("You almost soil yourself as the voice booms from the corner somewhere. What the hell is this you wonder. You are glad that you didn't pee on your eyes.");
+                      roomOneContinued();
+                  } else if (action == 2) {
+                      roomOneContinued("urea");
+                  }
               }
             break;
-
-          case 2:
-              System.out.println("Brightest lights you have ever seen sear"
-                              + " through your retina. You close your eyes" 
-                              + " immediately in utter pain while falling"
-                              + " to your knees. Hard stone floor almost"
-                              + " shatters your knees and you cry out in" 
-                              + " mindnumbing pain. Pain induced tears" 
-                              + " start to form up in your eyes, increasing"
-                              + " the burning feeling. The pain is almost"
-                              + " intolerable.");
-
-              System.out.println("  1. You remember that pee helps to reduce"
-                              + " burning pain. Contort yourself to a"
-                              + " position where you can pee in your eyes.");
-
-              System.out.println("  2. Crawl forward in search of"
-                              + " a light switch");
-
-              action = Integer.parseInt(Utils.getRawInput());
-            break;
         }
+      }
+
+    private void roomOneContinued(String state) {
 
     }
 
     private void roomOne(int caseNo) {
-      if (caseNo == 1) {
-        System.out.println("You move through the opening and go forward"
-                            + " hugging the cold wall. You seem to have"
-                            + " entered in some kind of a corridor.");
+      switch (caseNo) {
+         case 1: 
+             System.out.println("You move through the opening and go forward" 
+                                + "hugging the cold wall. You seem to have" 
+                                + "entered some kind of a corridor."
+                                + "Finally you stumble upon stairs."
+                                + "You wonder if you could ascend the stairs"
+                                + "rapidly even if you can't see anything.");
+             System.out.println("  1. Run up the stairs.");
+             System.out.println("  2. You might trip while running so ascend the stairs slowly and carefully.");
+             System.out.println("  3. Go back to the room where you woke up to see if there is something useful.");
+             int action = Integer.parseInt(Utils.getRawInput());
+             if (action == 1) {
+                  roomTwo('run');
+             } else if (action == 2) {
+                  roomTwo('walk');     
+             } else if (action == 3) {
+                  startingRoom(true);
+             }
+        break;
+        case 2:
+             
       }
     }
-    
+
+    private void roomTwo(String state) {
+
+    }
+
     private void wait(int milliseconds) {
       try {
         Thread.sleep(milliseconds);
@@ -112,6 +137,9 @@ public class Game {
       } else {
         return input;
       }
+
+    private int randomDamage() {
+      return (int) (Math.random() * 100) + 1;
     }
 
 }
