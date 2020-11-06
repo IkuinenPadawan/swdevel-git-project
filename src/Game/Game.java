@@ -112,7 +112,11 @@ public class Game {
     }
 
     private void roomTwo(String state) {
-
+        switch (state) {
+            case "walk":
+            break;
+            case "run":
+            break;
     }
 
     private void wait(int milliseconds) {
