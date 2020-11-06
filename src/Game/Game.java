@@ -9,7 +9,6 @@ public class Game {
 
     public void start() {
       introduction();  
-      startingRoom();
     }
 
     private void introduction() {
@@ -24,8 +23,9 @@ public class Game {
       System.out.println("Life doesn't even have a chance to flash before your"
                          +  " eyes, as you instantly fall unconscious.");               
       wait(5000);
+      startingRoom();
     }
-    // Handling long strings in java is a bitch
+
     private void startingRoom() {
         System.out.println("You wake up in a dark room feeling groggy and" 
                             + " utterly alone. What do you do?");
@@ -61,14 +61,14 @@ public class Game {
               System.out.println("Brightest lights you have ever seen sear through your retina. You close your eyes immediately in utter pain while falling to your knees. Hard stone floor almost shatters your knees and you cry out in mindnumbing pain. Pain induced tears start to form up in your eyes, increasing the burning feeling. The pain is almost intolerable.");
               System.out.println("  1. You remember that pee helps to reduce burning pain. Contort yourself to a position where you can pee in your eyes.");
               System.out.println("  2. Crawl forward in search of a light switch");
-              int action = Integer.parseInt(Utils.getRawInput());
+              action = Integer.parseInt(Utils.getRawInput());
               if (action == 1) {
                   roomOneContinued("urea");
               } else if (action == 2) {
                   System.out.println("You cannot find a light switch. The burning sensation in your eyes doesn't seem to get better.");
                   System.out.println("  1. You say out loud: 'Hello, is there anybody out there?'");
                   System.out.println("  2. You decide after all to pee on your eyes.");
-                  int action = Integer.parseInt(Utils.getRawInput());
+                  action = Integer.parseInt(Utils.getRawInput());
                   if (action == 1) {
                       System.out.println("'Yes how can I help you?'\n\n ");
                       System.out.println("You almost soil yourself as the voice booms from the corner somewhere. What the hell is this you wonder. You are glad that you didn't pee on your eyes.");
@@ -99,15 +99,14 @@ public class Game {
              System.out.println("  3. Go back to the room where you woke up to see if there is something useful.");
              int action = Integer.parseInt(Utils.getRawInput());
              if (action == 1) {
-                  roomTwo('run');
+                  roomTwo("run");
              } else if (action == 2) {
-                  roomTwo('walk');     
+                  roomTwo("walk");     
              } else if (action == 3) {
                   startingRoom(true);
              }
         break;
         case 2:
-             
       }
     }
 
@@ -117,6 +116,7 @@ public class Game {
             break;
             case "run":
             break;
+        }
     }
 
     private void wait(int milliseconds) {
@@ -127,10 +127,10 @@ public class Game {
       }
     }
 
-    // To be used somewhere
     // Could be moved to another class
     private String randomizeName() {
-      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe", "Morbidly-Obese-Susan"};
+      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe", "Morbidly-Obese-Susan",
+      "Vladimir", "Jorma", "Diego", "Donovan"};
       int random = (int) (Math.random() * names.length);
       return names[random];
     }
@@ -142,6 +142,7 @@ public class Game {
       } else {
         return input;
       }
+    }
 
     private int randomDamage() {
       return (int) (Math.random() * 100) + 1;
