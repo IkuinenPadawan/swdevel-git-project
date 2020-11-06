@@ -129,8 +129,8 @@ public class Game {
 
     // Could be moved to another class
     private String randomizeName() {
-      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe", "Morbidly-Obese-Susan,
-      Vladimir, Jorma, Diego, Donovan"};
+      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe", "Morbidly-Obese-Susan",
+      "Vladimir", "Jorma", "Diego", "Donovan"};
       int random = (int) (Math.random() * names.length);
       return names[random];
     }
