@@ -1,7 +1,8 @@
 public class Game {
     private final String gameName = "SomeCleverGameName";
     private String playerName;
-    
+    private String nemesisName = randomizeName();
+
     public Game() {
 
     }
@@ -22,7 +23,7 @@ public class Game {
       wait(1000);
       System.out.println("Life doesn't even have a chance to flash before your"
                          +  " eyes, as you instantly fall unconscious.");               
-      wait(2000);
+      wait(5000);
     }
     // Handling long strings in java is a bitch
     private void startingRoom() {
@@ -111,7 +112,11 @@ public class Game {
     }
 
     private void roomTwo(String state) {
-
+        switch (state) {
+            case "walk":
+            break;
+            case "run":
+            break;
     }
 
     private void wait(int milliseconds) {
@@ -125,7 +130,7 @@ public class Game {
     // To be used somewhere
     // Could be moved to another class
     private String randomizeName() {
-      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe"};
+      String[] names = {"Ivan", "Rodrigo", "Drumpf", "Vicky", "Fat-Joe", "Morbidly-Obese-Susan"};
       int random = (int) (Math.random() * names.length);
       return names[random];
     }
