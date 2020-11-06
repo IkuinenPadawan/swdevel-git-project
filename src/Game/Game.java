@@ -107,7 +107,6 @@ public class Game {
              }
         break;
         case 2:
-             
       }
     }
 
@@ -117,8 +116,9 @@ public class Game {
             break;
             case "run":
             break;
+        }
     }
-
+    
     private void wait(int milliseconds) {
       try {
         Thread.sleep(milliseconds);
@@ -142,6 +142,7 @@ public class Game {
       } else {
         return input;
       }
+    }
 
     private int randomDamage() {
       return (int) (Math.random() * 100) + 1;
