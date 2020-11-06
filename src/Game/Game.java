@@ -9,7 +9,6 @@ public class Game {
 
     public void start() {
       introduction();  
-      startingRoom();
     }
 
     private void introduction() {
@@ -24,6 +23,7 @@ public class Game {
       System.out.println("Life doesn't even have a chance to flash before your"
                          +  " eyes, as you instantly fall unconscious.");               
       wait(5000);
+      startingRoom();
     }
 
     private void startingRoom() {
