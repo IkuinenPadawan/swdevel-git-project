@@ -25,7 +25,7 @@ public class Game {
                          +  " eyes, as you instantly fall unconscious.");               
       wait(5000);
     }
-    // Handling long strings in java is a bitch
+
     private void startingRoom() {
         System.out.println("You wake up in a dark room feeling groggy and" 
                             + " utterly alone. What do you do?");
