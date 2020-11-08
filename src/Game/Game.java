@@ -115,6 +115,14 @@ public class Game {
             case "walk":
             break;
             case "run":
+                System.out.println("You run up the stairs as fast"
+                                  + "as you can but in the dark miss"
+                                  + "one step and fall face down"
+                                  + "on the stone steps almost breaking"
+                                  + "your jawline to pieces. Somehow you"
+                                  + "manage to crawl upwards in horrendous"
+                                  + "pain and finally arrive at the top of"
+                                  + "the stairs.");
             break;
         }
     }
