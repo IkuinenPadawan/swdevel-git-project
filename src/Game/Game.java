@@ -82,7 +82,12 @@ public class Game {
       }
 
     private void roomOneContinued(String state) {
-
+        switch(state) {
+            case "urea":
+                System.out.println("You instantly develop an aggressive eye infection due to urea in your eyes. You succumb to this infection in seconds.");
+                gameOver("urea");
+            break;
+        }
     }
 
     private void roomOne(int caseNo) {
