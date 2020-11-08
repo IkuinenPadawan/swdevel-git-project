@@ -113,6 +113,9 @@ public class Game {
     private void roomTwo(String state) {
         switch (state) {
             case "walk":
+                System.out.println("You arrive at the top of the stairs safe and sound."
+                                 + "You are glad that you didn't run up the stairs like"
+                                 + "an idiot.");
             break;
             case "run":
                 System.out.println("You run up the stairs as fast"
